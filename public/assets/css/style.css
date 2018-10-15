@@ -1,0 +1,377 @@
+.genre-li {
+    width: 24%;
+    text-align: center;
+}
+
+.movie {
+/* max-width: 200px; */
+display: inline-block;
+text-align: center;
+width: 200px;
+height: 250px;
+position: relative;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+
+.movie-header {
+font-size: 100%;
+background: rgba(34, 34, 34, 0.87);
+padding: 6px;
+position: absolute;
+bottom: 0;
+display: none;
+left: 0;
+right: 0;
+height: auto;
+overflow-y: hidden;
+overflow-x: hidden;
+}
+
+.min-desc {
+font-size: 14px;
+}
+.symbols {
+float: right;
+font-size: 50%;
+cursor: pointer;
+text-shadow: 0px 0px 20px black;
+}
+
+.symbols-bigger{
+font-size:150%;
+}
+
+#movie-header > .unselected{
+opacity: 0.7;
+}
+
+#movie-header > .unselected:hover{
+opacity: 1;
+}
+
+#movie-header > .selected{
+opacity: 1;
+}
+
+#movie-header > .selected:hover{
+opacity: 0.7;
+}
+
+.more-for-movie {
+color: white;
+}
+
+#result{
+position: fixed;
+background: white;
+color: black;
+display: none;
+min-width: 197px;
+top: 43px;
+}
+
+ul#result-list {
+list-style: none;
+padding: 0px 5px 0px 5px;
+}
+
+a#result-link {
+color: black;
+}
+
+a#result-link:hover {
+text-decoration: none;
+color: grey;
+}
+
+hr#hr-without {
+margin-top: 7px;margin-bottom: 7px;
+}
+
+select {
+color: black;
+}
+#trasparent {
+background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+background: -webkit-linear-gradient(top, rgb(41, 55, 64) 0%,rgba(0,0,0,0) 100%);
+background: linear-gradient(to bottom, rgb(41, 55, 64) 0%,rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#a6000000',GradientType=0 );
+width: 100%;
+text-align: center;
+font-family: Arial;
+}
+
+div#movie{
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+width: 70%;
+}
+
+nav#footer {
+min-height: 0px;
+}
+
+#movie-header {
+font-size: 58px;
+font-weight: bold;
+}
+
+p#movie-description {
+font-size: 1.4em;
+font-style: italic;
+}
+
+#movie-details {
+font-size: 19px;
+/* font-family: 'Lora', serif; */
+}
+
+.genre-link {
+color: #fff !important;
+}
+
+.genre-edit-link{
+color: black;
+}
+
+.genre-edit-link:hover{
+color: black;
+}
+
+@media (max-width: 759px){
+#all-movies{
+    padding: 0px;
+}
+div#movie {
+    width: 98%;
+}
+.movie-link{
+    margin:2px;
+}
+
+.movie {
+    width: 32%;
+    height: 260px;
+}
+
+.container{
+    width: 98%;
+    text-align: center;
+}
+
+ul.nav.navbar-nav.navbar-right {
+padding: 0;
+}
+
+ul.nav.navbar-nav.navbar-left{
+    padding:0;
+}
+
+#movie-header{
+    font-size: 40px !important;
+}
+
+#big-image{
+    width:100% !important;
+}
+iframe#trailer-frame {
+    width: 99% !important;
+    height: 30% !important;
+}
+
+p#movie-description {
+    font-size: 1em;
+}  
+.buttons{
+    display:none;
+} 
+#result{
+    display:none !important;
+}
+}
+@media (max-width:431px){
+.movie {
+    width: 49%;
+    height: 242px;
+}
+    .movie-header{
+    display:block !important;
+}
+.more-for-movie{
+    display: block;
+}
+.symbols-bigger{
+    color:white;
+    opacity: 1;
+}
+.min-desc{
+    display:none;
+}
+
+.container a:nth-child(1n+7) > .movie{
+    height: 158px;
+    width: 32%;
+}
+} 
+
+@media (min-width: 431px){
+.symbols-bigger{
+    color:white;
+    opacity: 1;
+}
+
+.movie-header{
+    display: block;
+}
+
+.min-desc{
+    display:none;
+}
+    .movie-header{
+    display: block;
+}
+.more-for-movie{
+    display: block;
+    height: auto;
+}
+}
+
+@media (min-width:630px){
+.list-genres {
+    text-align: right !important;
+    width: 438px;
+}
+
+.movie{
+    width: 24%;
+    height: 234px;
+}
+.movie:hover .movie-header{
+    display: block;
+    height: auto !important;
+}
+
+.movie:hover .more-for-movie{
+    display: block;
+}
+
+.movie:hover .min-desc{
+    display:block;
+}
+}
+
+@media (min-width:800px){
+.movie-header{
+    display:none;
+}
+.more-for-movie{
+    display:none;
+}
+.movie{
+        width: 168px;
+height: 234px;
+}
+#more-movies{
+    left: auto;
+    right: auto;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density *//* FF3.6-15 *//* Chrome10-25,Safari5.1-6 *//* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *//* IE6-9 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+50,0.65+100 *//* FF3.6-15 *//* Chrome10-25,Safari5.1-6 *//* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *//* IE6-9 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+30,0+70,0.65+100 *//* FF3.6-15 *//* Chrome10-25,Safari5.1-6 *//* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *//* IE6-9 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,0+30,0+70,1+100 *//* FF3.6-15 *//* Chrome10-25,Safari5.1-6 *//* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *//* IE6-9 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,0+50,1+100 *//* FF3.6-15 *//* Chrome10-25,Safari5.1-6 *//* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *//* IE6-9 */
+}
+#wrapper {
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    /* left: auto; */
+    width: 70%;
+    -webkit-overflow-scrolling: touch;
+    /* right: auto; */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.internal {
+    display: inline-block;
+}
+}  
+
+@media (min-width: 1920px){
+#trasparent{
+    width: auto;
+    padding: 0;
+    height: 90vh;
+}
+
+#movie-header {
+    font-size: 2em;
+}
+
+.external-link {
+    font-size: 0.9em;
+}
+
+#movie-details {
+    font-size: 0.9em;
+}
+
+#more-movies{
+    position: absolute;
+    bottom: 20px;
+}
+
+h3 {
+font-size: 1.3em;
+}
+
+#movie-description {
+    font-size: 1.1em !important;
+}
+
+.movie {
+    width: 168px;
+    height: 243px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#all-movies {
+    /* text-align: center; */
+    width: 100%;
+    padding: 0;
+}
+}
+::-webkit-scrollbar {
+width: 10px;
+}
+::-webkit-scrollbar-track {
+background-color: white;
+border-left: 1px solid #ccc;
+}
+::-webkit-scrollbar-thumb {
+background-color: darkgrey;
+}
+::-webkit-scrollbar-thumb:hover {
+background-color: grey;
+}
+
+.genre-button {
+margin-top: 3px;
+}
+
+.movie-link {
+display: block;
+margin-top: 2px;
+}
+
+@media (min-width:1280px){
+.movie-link{
+    max-width: 261px;
+}
+}

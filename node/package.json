@@ -1,0 +1,14 @@
+{
+  "name": "queue-downloader",
+  "version": "1.0.0",
+  "description": "movie queue downlaoder",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "bini",
+  "license": "ISC",
+  "dependencies": {
+    "promise-mysql": "^3.3.1"
+  }
+}

@@ -1,0 +1,1 @@
+<a class="btn btn-default" href="http://localhost:8888/password/reset/{{$token}}" role="button">{{ checkHebrew()?'לחץ כאן כדי לאפס את סיסמתך':'Click Here To Reset Your Password' }}</a>

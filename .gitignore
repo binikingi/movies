@@ -1,0 +1,7 @@
+.vscode
+.idea
+vendor
+.env.example
+gulpfile.js
+tests
+node/node_modules
